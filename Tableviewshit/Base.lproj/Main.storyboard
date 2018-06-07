@@ -66,16 +66,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: smiley " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R74-kf-3r8">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="R74-kf-3r8" firstAttribute="centerX" secondItem="X7d-im-QyX" secondAttribute="centerX" id="Zu5-tx-RFD"/>
                             <constraint firstItem="Xbg-gq-p5h" firstAttribute="centerX" secondItem="X7d-im-QyX" secondAttribute="centerX" id="ec4-M9-RDY"/>
                             <constraint firstItem="CTY-SG-zhY" firstAttribute="centerX" secondItem="X7d-im-QyX" secondAttribute="centerX" id="eeL-tg-zOW"/>
                             <constraint firstItem="CTY-SG-zhY" firstAttribute="top" secondItem="86U-51-OZ3" secondAttribute="bottom" constant="40" id="ocK-mK-hrM"/>
+                            <constraint firstItem="R74-kf-3r8" firstAttribute="top" secondItem="Xbg-gq-p5h" secondAttribute="bottom" constant="20" id="twR-yv-6pI"/>
                             <constraint firstItem="Xbg-gq-p5h" firstAttribute="top" secondItem="CTY-SG-zhY" secondAttribute="bottom" constant="20" id="vJQ-pW-jaf"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="R74-kf-3r8" id="ZAs-w2-guK"/>
                         <outlet property="definitionLabel" destination="Xbg-gq-p5h" id="dCh-x3-YHZ"/>
                         <outlet property="emojiLabel" destination="CTY-SG-zhY" id="syG-b1-Ard"/>
                     </connections>
